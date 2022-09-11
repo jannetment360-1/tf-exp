@@ -30,7 +30,7 @@ provider "google" {
   project = var.gcp_project
 }
 resource "google_storage_bucket" "private-equity" {
-  name          = "tf-exp-project"
+  name          = "tf-exp-project-362208"
   location      = "australia-southeast1"
   force_destroy = true
     }
