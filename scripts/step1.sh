@@ -12,6 +12,8 @@ export Git_Root="https://github.com/jannetment360-1/tf-exp"
 #	  --display-name="Liveability Service Account"    
 export SERVICE_ACCOUNT_ID=${PROJECT_ID}
 #6.Enable all the APIs
+gcloud services enable servicemanagement.googleapis.com
+gcloud services enable servicecontrol.googleapis.com
 # dataflow 
 gcloud services enable dataflow.googleapis.com
 #firestore
