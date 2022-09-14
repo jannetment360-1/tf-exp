@@ -27,6 +27,6 @@ steps:
         echo "******* At environment: ********"
         echo "*************************************************"
        fi
-       bash step1.sh
+       bash step2.sh
 options:
  logging: CLOUD_LOGGING_ONLY
