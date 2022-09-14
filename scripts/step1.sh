@@ -1,5 +1,5 @@
 #1.create a project and export it into a variable(project creation- manual)
-export PROJECT_ID="mvp-liveability-230180"
+export PROJECT_ID="mvp-liveability-230181"
       
 #2.Sets the project,location &dataset
 gcloud config set project ${PROJECT_ID}
@@ -7,9 +7,9 @@ export LOCATION="australia-southeast1"
 export BQ_DATASET="liveability"
 export Git_Root="https://github.com/jannetment360-1/tf-exp"
 #3.Create the service account with same proj name and export it to a variable which can be used in later stages    
-#gcloud iam service-accounts create ${PROJECT_ID} \
-#	 --description="Service account for the Liveability project" \
-#	  --display-name="Liveability Service Account"    
+gcloud iam service-accounts create ${PROJECT_ID} \
+	 --description="Service account for the Liveability project" \
+	  --display-name="Liveability Service Account"    
 export SERVICE_ACCOUNT_ID=${PROJECT_ID}
 #6.Enable all the APIs
 # service user to enable other APIs
