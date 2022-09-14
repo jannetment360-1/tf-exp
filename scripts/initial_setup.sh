@@ -70,8 +70,8 @@ bq --location=${LOCATION} mk \
 #10.Clone the data and schema from git to cloud shell
 git clone ${Git_Root}
 #11. Copy the files to cloud storage
-gsutil cp ~/final_demo/data/* gs://${PROJECT_ID}/data/batch_data/
-gsutil cp ~/final_demo/ddl/* gs://${PROJECT_ID}/ddl/
+gsutil cp ~/tf-exp/data/* gs://${PROJECT_ID}/data/batch_data/
+gsutil cp ~/tf-exp/ddl/* gs://${PROJECT_ID}/ddl/
 ############################# For data flow start ########################################################
 #26.Create a directory
 #mkdir batch_data
