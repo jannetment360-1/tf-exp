@@ -5,7 +5,7 @@ export PROJECT_ID="mvp-liveability-230179"
 gcloud config set project ${PROJECT_ID}
 export LOCATION="australia-southeast1"
 export BQ_DATASET="liveability"
-export Git_Root="https://github.com/liveabilityment360/final_demo"
+export Git_Root="https://github.com/jannetment360-1/tf-exp"
 #3.Create the service account with same proj name and export it to a variable which can be used in later stages    
 #gcloud iam service-accounts create ${PROJECT_ID} \
 #	 --description="Service account for the Liveability project" \
