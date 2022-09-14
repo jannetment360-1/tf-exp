@@ -27,6 +27,6 @@ steps:
         echo "******* At environment: ********"
         echo "*************************************************"
        fi
-       bash step1.sh ${_DAGS_FOLDER}
+       bash step1.sh
 options:
  logging: CLOUD_LOGGING_ONLY
