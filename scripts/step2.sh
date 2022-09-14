@@ -11,10 +11,10 @@ export Git_Root="https://github.com/jannetment360-1/tf-exp"
 #	  --display-name="Liveability Service Account"    
 export SERVICE_ACCOUNT_ID=${PROJECT_ID}
 #9.Create a datset in bq
-#bq --location=${LOCATION} mk \
-#	 --dataset ${BQ_DATASET} 
+bq --location=${LOCATION} mk \
+	 --dataset ${BQ_DATASET} 
 #10.Clone the data and schema from git to cloud shell
 #git clone ${Git_Root}
 #11. Copy the files to cloud storage
-gsutil cp /home/jannetment3601/tf-exp/data/* gs://${PROJECT_ID}/data/batch_data/
-gsutil cp /home/jannetment3601/tf-exp/ddl/* gs://${PROJECT_ID}/ddl/
+gsutil cp /data/* gs://${PROJECT_ID}/data/batch_data/
+gsutil cp /ddl/* gs://${PROJECT_ID}/ddl/
