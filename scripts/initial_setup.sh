@@ -73,3 +73,4 @@ bq --location=${LOCATION} mk \
 #10. Copy the files to cloud storage
 gsutil cp ../data/* gs://${PROJECT_ID}/data/batch_data/
 gsutil cp ../ddl/* gs://${PROJECT_ID}/ddl/
+gsutil cp key.json gs://${PROJECT_ID}/json_key/
